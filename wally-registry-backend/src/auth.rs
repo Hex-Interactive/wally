@@ -274,6 +274,7 @@ async fn verify_github<AccessType: GithubAccessor>(
 pub enum ReadAccess {
     Public,
     ApiKey,
+    #[allow(dead_code)]
     Github(GithubInfo),
 }
 
